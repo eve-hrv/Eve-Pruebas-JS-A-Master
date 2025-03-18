@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page" class="info data dark"></div>
+    <script>
+        const element = document.querySelector("#page");
+
+        // Añadir clases
+        element.classList.add("highlight", "selected");
+        console.log(element.classList);  // ["info", "data", "dark", "highlight", "selected"]
+
+        // Eliminar clases
+        element.classList.remove("highlight", "selected");
+        console.log(element.classList);  // ["info", "data", "dark"]
+    </script>
+</body>
+</html>

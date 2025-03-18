@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="page" class="info data dark" data-number="5"></div>
+    <script>
+        const element = document.querySelector("#page");
+        // Obtener la lista de clases
+        console.log(element.classList);              // ["info", "data", "dark"]
+        console.log(element.classList.value);        // "info data dark"
+        console.log(element.classList.length);       // 3
+
+        // Convertir a array
+        console.log(Array.from(element.classList));  // ["info", "data", "dark"]
+        console.log([...element.classList]);         // ["info", "data", "dark"]
+
+        // Acceder a una clase específica
+        console.log(element.classList.item(0));      // "info"
+        console.log(element.classList.item(1));      // "data"
+        console.log(element.classList.item(3));
+        
+    </script>
+</body>
+</html>

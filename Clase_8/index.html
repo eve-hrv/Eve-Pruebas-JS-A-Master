@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Comentarios con Fecha y Hora</title>
+</head>
+<body>
+  <h2>Deja tu comentario</h2>
+  <input type="text" id="comentario" placeholder="Escribe tu comentario aquí">
+  <button onclick="agregarComentario()">Enviar</button>
+
+  <div id="comentarios"></div>
+
+  <script>
+    function agregarComentario() {
+      const comentario = document.getElementById('comentario').value;
+      if (comentario.trim() === '') return; // Evitar comentarios vacíos
+
+      const ahora = new Date();
+      const fechaHora = ahora.toLocaleString();
+
+      const nuevoComentario = document.createElement('p');
+      nuevoComentario.innerHTML = `<strong>${fechaHora}</strong>: ${comentario}`;
+
+      document.getElementById('comentarios').appendChild(nuevoComentario);
+      document.getElementById('comentario').value = ''; // Limpiar el input
+    }
+  </script>
+</body>
+</html>
