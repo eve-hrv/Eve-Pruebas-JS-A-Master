@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f2;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #d94f4f;
+}
+
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ffb347;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
+
+#estatus {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #4caf50;
+}
+
+div {
+  margin-bottom: 20px;
+}
